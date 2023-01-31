@@ -1,0 +1,23 @@
+.catalogue{
+	/* border: 1px solid; */
+	width: 70%;
+	margin: auto;
+	padding: 1%;
+}
+.catalogue> h3{
+	width: 50%;
+	margin-left: 1em;
+}
+hr{
+	color: rgba(117, 30, 30, 0.862);
+}
+.produits{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+.fa-shopping-cart{
+	float: right;
+	margin-right: 2%;
+	cursor: pointer;
+}

@@ -1,0 +1,22 @@
+<div class="catalogue">
+	<div class="title">
+		<h2>Catalogue
+			<i class="fas fa-shopping-cart fs-3 basket-comp d-flex align-items-center justify-content-center" routerLink="/panier">
+                <span class="span-header">{{ (items$ | async).length }}</span>
+            </i>
+		</h2>
+	</div>
+	<hr>
+	<h3>Menus</h3>
+	<div class="produits">
+		<app-produit *ngFor="let menu of menus" [produit]="menu" ></app-produit>
+	</div>
+	<h3>Burgers</h3>
+	<div class="produits">
+		<app-produit *ngFor="let burger of burgers" [produit]="burger" ></app-produit>
+	</div>
+</div>
+
+<!--
+	<i class="fa fa-shopping-cart" aria-hidden="true" routerLink="/panier"></i>
+-->

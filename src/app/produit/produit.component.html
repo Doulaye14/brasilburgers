@@ -1,0 +1,14 @@
+<div class="produit-card">
+	<span>{{ produit.nom }}</span>
+	<div>
+		<img [src]="transform(produit.image)" alt="">
+	</div>
+
+	<span class="prix">Prix : {{ produit.prix | currency: 'Fcfa'}}</span>
+
+	<div class="boutons">
+		<button (click)="onViewFaceSnap()" class="btn btn-sm btn-warning">Détails</button>
+		<i class="fa fa-shopping-cart" aria-hidden="true" (click)="addToCart(produit)"></i>
+	</div>
+
+</div>
